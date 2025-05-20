@@ -1,6 +1,6 @@
 "use client";
 
-import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/nextjs";
+// import { SignedIn, SignedOut, RedirectToSignIn } from "@clerk/nextjs";
 
 export default function EducationPage() {
   return (

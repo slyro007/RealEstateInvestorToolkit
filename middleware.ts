@@ -1,6 +1,4 @@
-import { clerkMiddleware } from '@clerk/nextjs/server';
-
-export default clerkMiddleware();
+// Middleware removed for Clerk migration. Add Appwrite or other auth middleware here if needed.
 
 export const config = {
   // Matcher configuration for Next.js
