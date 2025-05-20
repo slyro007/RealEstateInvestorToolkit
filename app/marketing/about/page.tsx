@@ -1,9 +1,9 @@
-"use client"
+"use client";
 
-import { MaterialLayout } from "@/components/layout/material-layout"
-import { BarChart2 } from "lucide-react"
+import { MaterialLayout } from "@/components/layout/material-layout";
+import { Rocket } from "lucide-react";
 
-export default function DealAnalysisPage() {
+export default function MarketingAboutPage() {
   return (
     <MaterialLayout>
       <main className="relative min-h-screen flex flex-col items-center justify-start pt-24 px-4 overflow-hidden">
@@ -12,38 +12,38 @@ export default function DealAnalysisPage() {
           <ellipse cx="450" cy="150" rx="400" ry="80" fill="url(#paint0_radial)" />
           <defs>
             <radialGradient id="paint0_radial" cx="0" cy="0" r="1" gradientTransform="translate(450 150) scale(400 80)" gradientUnits="userSpaceOnUse">
-              <stop stopColor="#38bdf8" />
-              <stop offset="1" stopColor="#a78bfa" stopOpacity="0.2" />
+              <stop stopColor="#a78bfa" />
+              <stop offset="1" stopColor="#38bdf8" stopOpacity="0.2" />
             </radialGradient>
           </defs>
         </svg>
         {/* Hero Section */}
         <section className="w-full max-w-3xl text-center mb-16 relative z-10">
           <span className="inline-block animate-bounce-slow">
-            <BarChart2 className="mx-auto mb-4 h-12 w-12 text-primary-main drop-shadow-lg" />
+            <Rocket className="mx-auto mb-4 h-12 w-12 text-primary-main drop-shadow-lg" />
           </span>
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary-main">Deal Analysis</h1>
+          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary-main">AI-Powered Marketing</h1>
           <p className="text-lg md:text-xl text-text-secondary mb-8">
-            Make smarter investment decisions with powerful deal analysis tools. Evaluate properties, calculate ROI, and compare opportunities with ease.
+            Supercharge your real estate marketing with automation, smart analytics, and AI-generated content. Reach more leads, save time, and optimize your campaigns effortlessly.
           </p>
         </section>
         {/* Features Section */}
         <section className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-2 gap-8 text-center relative z-10">
           <div className="p-6 rounded-xl bg-white dark:bg-card shadow-md-1 animate-fade-in-up" style={{ animationDelay: '0.1s', animationFillMode: 'both' }}>
-            <h3 className="font-bold text-lg mb-1 text-primary-main">Comprehensive Calculators</h3>
-            <p className="text-text-secondary">Analyze cash flow, ROI, cap rate, and more with easy-to-use calculators.</p>
+            <h3 className="font-bold text-lg mb-1 text-primary-main">Automated Campaigns</h3>
+            <p className="text-text-secondary">Launch and manage multi-channel campaigns (email, SMS, direct mail) with just a few clicks.</p>
           </div>
           <div className="p-6 rounded-xl bg-white dark:bg-card shadow-md-1 animate-fade-in-up" style={{ animationDelay: '0.2s', animationFillMode: 'both' }}>
-            <h3 className="font-bold text-lg mb-1 text-primary-main">Scenario Comparison</h3>
-            <p className="text-text-secondary">Compare multiple investment scenarios side-by-side to find the best deal.</p>
+            <h3 className="font-bold text-lg mb-1 text-primary-main">AI Script Generation</h3>
+            <p className="text-text-secondary">Instantly generate high-converting marketing scripts tailored to your target audience and property type.</p>
           </div>
           <div className="p-6 rounded-xl bg-white dark:bg-card shadow-md-1 animate-fade-in-up" style={{ animationDelay: '0.3s', animationFillMode: 'both' }}>
-            <h3 className="font-bold text-lg mb-1 text-primary-main">Market Data Integration</h3>
-            <p className="text-text-secondary">Leverage up-to-date market data for accurate property analysis and projections.</p>
+            <h3 className="font-bold text-lg mb-1 text-primary-main">Smart Analytics</h3>
+            <p className="text-text-secondary">Track open rates, responses, and campaign ROI with real-time dashboards and actionable insights.</p>
           </div>
           <div className="p-6 rounded-xl bg-white dark:bg-card shadow-md-1 animate-fade-in-up" style={{ animationDelay: '0.4s', animationFillMode: 'both' }}>
-            <h3 className="font-bold text-lg mb-1 text-primary-main">Export & Share Reports</h3>
-            <p className="text-text-secondary">Generate professional reports to share with partners, lenders, or clients.</p>
+            <h3 className="font-bold text-lg mb-1 text-primary-main">Lead Management</h3>
+            <p className="text-text-secondary">Organize, segment, and nurture your leads automatically for maximum conversion.</p>
           </div>
         </section>
         <style jsx global>{`
@@ -64,5 +64,5 @@ export default function DealAnalysisPage() {
         `}</style>
       </main>
     </MaterialLayout>
-  )
+  );
 } 

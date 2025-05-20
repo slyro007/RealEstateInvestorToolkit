@@ -23,21 +23,21 @@ export default function HomePage() {
         </section>
         {/* Features/Benefits Section */}
         <section className="w-full max-w-4xl grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-          <div className="p-6 rounded-xl bg-white dark:bg-card shadow-md-1">
+          <Link href="/marketing/about" className="p-6 rounded-xl bg-white dark:bg-card shadow-md-1 cursor-pointer hover:shadow-lg transition-shadow flex flex-col items-center">
             <Rocket className="mx-auto mb-2 h-8 w-8 text-primary-main" />
             <h3 className="font-bold text-lg mb-1 text-primary-main">AI-Powered Marketing</h3>
             <p className="text-text-secondary">Automate campaigns, generate scripts, and track results with smart analytics.</p>
-          </div>
-          <div className="p-6 rounded-xl bg-white dark:bg-card shadow-md-1">
+          </Link>
+          <Link href="/deals" className="p-6 rounded-xl bg-white dark:bg-card shadow-md-1 cursor-pointer hover:shadow-lg transition-shadow flex flex-col items-center">
             <BarChart2 className="mx-auto mb-2 h-8 w-8 text-primary-main" />
             <h3 className="font-bold text-lg mb-1 text-primary-main">Deal Analysis</h3>
             <p className="text-text-secondary">Evaluate properties, calculate ROI, and make data-driven investment decisions.</p>
-          </div>
-          <div className="p-6 rounded-xl bg-white dark:bg-card shadow-md-1">
+          </Link>
+          <Link href="/education" className="p-6 rounded-xl bg-white dark:bg-card shadow-md-1 cursor-pointer hover:shadow-lg transition-shadow flex flex-col items-center">
             <BookOpen className="mx-auto mb-2 h-8 w-8 text-primary-main" />
             <h3 className="font-bold text-lg mb-1 text-primary-main">Education & Insights</h3>
             <p className="text-text-secondary">Access learning paths, guides, and market insights to grow your expertise.</p>
-          </div>
+          </Link>
         </section>
       </main>
     </MaterialLayout>
