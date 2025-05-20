@@ -4,6 +4,9 @@ A comprehensive platform for off-market real estate investing, featuring AI-powe
 
 ## Recent Updates
 
+- **Appwrite Migration:**
+  - All authentication and database functionality is now powered by Appwrite.
+  - Docker, Prisma, and Postgres have been removed from the stack.
 - **Modern Animated Landing Page:**
   - Beautiful gradient background and improved layout.
   - Three main feature cards (AI-Powered Marketing, Deal Analysis, Education & Insights) are now clickable and link to dedicated info pages.
@@ -43,13 +46,8 @@ A comprehensive platform for off-market real estate investing, featuring AI-powe
   - React
   - Tailwind CSS
   - shadcn/ui
-  - Clerk Authentication
-
-- **Backend**
-  - Next.js API Routes
-  - Prisma ORM
-  - PostgreSQL
-  - OpenAI API
+- **Backend & Database**
+  - Appwrite (auth, database, and API)
 
 ## Getting Started
 
@@ -67,46 +65,17 @@ A comprehensive platform for off-market real estate investing, featuring AI-powe
 3. Set up environment variables:
    Create a `.env` file in the root directory with the following variables:
    ```
-   # Database
-   DATABASE_URL="postgresql://user:password@localhost:5432/real-estate-investor-toolkit"
-
-   # Authentication
-   NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
-   CLERK_SECRET_KEY=your_clerk_secret_key
-
-   # OpenAI
-   OPENAI_API_KEY=your_openai_api_key
+   NEXT_PUBLIC_APPWRITE_ENDPOINT=your_appwrite_endpoint
+   NEXT_PUBLIC_APPWRITE_PROJECT_ID=your_project_id
+   APPWRITE_API_KEY=your_appwrite_api_key
    ```
 
-4. Set up the database:
-   ```bash
-   npm run db:push
-   npm run db:seed
-   ```
-
-5. Start the development server:
+4. Start the development server:
    ```bash
    npm run dev
    ```
 
-6. Open [http://localhost:3000](http://localhost:3000) in your browser.
-
-## Database Management
-
-- View database with Prisma Studio:
-  ```bash
-  npm run db:studio
-  ```
-
-- Push schema changes:
-  ```bash
-  npm run db:push
-  ```
-
-- Seed database with sample data:
-  ```bash
-  npm run db:seed
-  ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## Contributing
 
