@@ -10,7 +10,7 @@ import Link from "next/link"
 export default function HomePage() {
   return (
     <MaterialLayout>
-      <main className="min-h-screen bg-background flex flex-col items-center justify-start pt-24 px-4">
+      <main className="min-h-screen flex flex-col items-center justify-start pt-24 px-4">
         {/* Hero Section */}
         <section className="w-full max-w-3xl text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-primary-main">Real Estate Investor Toolkit</h1>
@@ -18,7 +18,6 @@ export default function HomePage() {
             The all-in-one platform for off-market real estate investing: AI-powered marketing, deal analysis, and education. Empower your investment journey with modern tools and insights.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/sign-up" className="inline-block px-8 py-3 rounded-lg bg-primary-main text-white font-semibold shadow-md hover:bg-primary-dark transition">Get Started Free</Link>
             <Link href="/sign-in" className="inline-block px-8 py-3 rounded-lg border border-primary-main text-primary-main font-semibold shadow-md hover:bg-primary-main hover:text-white transition">Sign In</Link>
           </div>
         </section>

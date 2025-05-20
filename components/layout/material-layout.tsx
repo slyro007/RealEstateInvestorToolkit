@@ -17,7 +17,7 @@ export function MaterialLayout({ children }: MaterialLayoutProps) {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-surface-main dark:bg-dark-surface-main">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-purple-100 via-blue-50 to-white dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
       <MaterialAppBar position="sticky">
         <MaterialAppBarLeft>
           <MaterialButton variant="text" size="icon" aria-label="Menu">
@@ -39,7 +39,7 @@ export function MaterialLayout({ children }: MaterialLayoutProps) {
             {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
           </MaterialButton>
           <Link href="/sign-in">
-            <MaterialButton variant="tonal" size="sm">
+            <MaterialButton variant="tonal" size="lg" className="px-6 py-2 text-base font-semibold">
               Log In
             </MaterialButton>
           </Link>
