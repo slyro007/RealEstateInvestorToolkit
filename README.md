@@ -2,6 +2,19 @@
 
 A comprehensive platform for off-market real estate investing, featuring AI-powered marketing tools, deal analysis, and educational resources.
 
+## Recent Updates
+
+- **Modern Animated Landing Page:**
+  - Beautiful gradient background and improved layout.
+  - Three main feature cards (AI-Powered Marketing, Deal Analysis, Education & Insights) are now clickable and link to dedicated info pages.
+- **Module Info Pages:**
+  - Each module (Marketing, Deals, Education) has a clean, animated info page with hero section, icon animation, and feature highlights.
+- **Improved Navigation:**
+  - The landing page is now the main entry point for the app, with clear navigation to sign in and module details.
+- **UI/UX Enhancements:**
+  - Larger, more prominent login button.
+  - Consistent, modern design across all public pages.
+
 ## Features
 
 - **Marketing Module**
