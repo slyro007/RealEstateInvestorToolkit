@@ -1,15 +1,6 @@
-import { authMiddleware } from "@clerk/nextjs";
+import { clerkMiddleware } from '@clerk/nextjs/server';
 
-export default authMiddleware({
-  // Routes that can be accessed while signed out
-  publicRoutes: [
-    "/",
-    "/sign-in(.*)",
-    "/sign-up(.*)",
-    "/api/auth(.*)" // Allow auth-related API routes
-  ],
-  debug: process.env.NODE_ENV === 'development'
-});
+export default clerkMiddleware();
 
 export const config = {
   // Matcher configuration for Next.js
